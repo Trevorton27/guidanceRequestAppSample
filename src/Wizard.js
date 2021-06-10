@@ -60,14 +60,17 @@ class Wizard extends React.Component {
   }
   render() {
     return (
-      <Container fluid style={{ marginTop: '15px' }}>
-        <Row>
+      <Container
+        fluid
+        style={{ marginTop: '15px', width: '80%', margin: '0 auto' }}
+      >
+        <Row className='justify-content-center'>
           <Col xs={12} md={6} className='mr-auto ml-auto'>
             <ReactWizard
               steps={steps}
               navSteps
-              title='react-wizard'
-              description='This will help you split a complicated flow or a complicated form in multiple steps.'
+              title='SDMM Guidance Request Sample'
+              description='Test run of basic functionality'
               headerTextCenter
               validate
               color='primary'
